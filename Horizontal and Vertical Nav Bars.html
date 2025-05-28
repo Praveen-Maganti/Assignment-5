@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+    .horizontal-nav{
+      background-color:lightgray;
+      text-align: center;
+      border:1px solid black;
+      width:45vw;
+       display: flex;
+    }
+    .horizontal-nav a{
+        display: inline-block;
+        font-size:20px;
+        text-decoration:none;
+        padding:14px 20px;
+        border:1px solid black;  
+    }
+     .horizontal-nav a:hover {
+      background-color: #555;
+      color:white;
+    }
+
+    .left-inner-div{
+        border:1px solid black;
+        padding:10px;
+        width:45vw;   
+    }
+    .right-inner-div{
+        border:1px solid black;
+        padding:10px;
+        height:60vw;   
+    }
+    .vertical-nav{
+      background-color:skyblue;
+      text-align: center;
+      border:1px solid black;
+      width:30vw;
+    }
+    .vertical-nav a{
+        display: block;
+        font-size:20px;
+        text-decoration:none;
+        padding:14px 20px; 
+    }
+     .vertical-nav a:hover {
+      background-color: orange;
+      color:white;
+    }
+    .right-inner-div{
+        border:1px solid black;
+        padding:10px;
+        width:31vw;  
+        height:35vh; 
+    }
+    .div{
+        height:100vh;
+        width:100vw;
+        display:flex;
+    }
+    .left-div{
+        margin-left:100px;
+        margin-top:140px;
+    }
+    .right-div{
+        margin-left:100px;
+        margin-top:80px;
+    }
+    .left-h1{
+        text-align:center;
+    }
+    .right-h1{
+        text-align:center;
+    }
+
+</style>
+<body>
+    <div class="div">
+        <div class="right-div">
+            <h1 class="right-h1">Vertical Navigation Bar</h1>
+            <div class="right-inner-div d-flex flex-row justify-content-center">
+                <div class="vertical-nav">
+                    <a href="#Home">Home</a>
+                    <a href="#Java">Java</a>
+                    <a  href="#HTML">HTML</a>
+                    <a  href="#CSS">CSS</a>
+                    <a href="#Bootstrap">Bootstrap</a>
+                </div>
+            </div>
+        </div>
+        <div class="left-div">
+            <h1 class="left-h1">Horizontal Navization Bar</h1>
+            <div class="left-inner-div d-flex flex-row justify-content-center">
+                <div class="horizontal-nav">
+                    <a  style="margin-left:145px" href="#Home">Home</a>
+                    <a href="#Java">Java</a>
+                    <a  href="#HTML">HTML</a>
+                    <a  href="#CSS">CSS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
